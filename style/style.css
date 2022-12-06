@@ -1,0 +1,182 @@
+*{box-sizing: border-box;}
+body {
+    margin: 0;
+    padding: 0;
+}
+nav {
+    position: fixed;
+    width: 15%;
+    background-color:#111;    
+    text-align: center;
+    height: 100%;
+    overflow: auto;
+    margin: 0;
+    padding: 0;
+    
+}
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    text-align: center;
+    display: block;
+    opacity: 0.8;    
+    
+}
+
+nav img {
+    opacity: 0.8;
+}
+nav a:hover {
+    background-color: #aaa;
+    color: black;
+}
+.topnav{
+    overflow: hidden;
+    background-color: #aaa;
+    list-style-type: none;
+    display: none;
+}
+.topnav li {
+    float: left;
+}
+.topnav li a{
+    display: inline-block;
+    padding: 14px 16px;
+    text-decoration: none;    
+}
+.topnav li a:hover {
+    background-color: black;
+    color: white;
+}
+@media screen and (max-width:700px) {
+    nav{
+        display: none;
+    }
+    .topnav {
+        display: block;
+    }    
+}
+.row {    
+    margin-left: 15%;
+    padding: 20px;    
+    background-color: black;
+    overflow: hidden;
+    color: white;    
+}
+header {
+    color: white;
+    opacity: 0.8;
+    text-align: center;    
+    padding: 30px;        
+    
+}
+header img{
+    padding: 20px;
+    margin-top: 60px;
+}
+.content{
+    opacity: 0.8;
+    text-align: left;       
+}
+.content p{
+    font-size: 20px;
+    text-align: justify;
+    text-indent: 50px;
+    margin-right: 10px;
+}
+.skill {
+    background-color: white;
+    width: 50%;
+}
+.box {
+    background-color: darkgray;
+    height: 28px;
+    
+    text-align: center;
+    color: black;
+    font-weight: bold;
+}
+.section {
+    float: left;
+    background-color: #999;
+    text-align: center;
+    padding: 30px;
+    width: 50%;
+}
+.card {
+    width: 50%;
+    float: left;
+    padding: 20px;
+    color: black;
+}
+.section- button{
+    padding: 20px;
+    font-size: 30px;
+    margin: 30px;
+}
+.section- button:hover {
+    opacity: 0.8;
+}
+.row::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.col
+{
+    
+    margin-left: 15%;
+    padding: 40px;
+    background-color: black;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+.col-50 {
+    
+    margin: 30px;
+    flex: 30%;
+    background-color: darkgray;
+    border: 1px solid black;
+    overflow: hidden;
+}
+.col-50 ul {
+    list-style-type: none;
+    margin: 0;    
+    padding: 0;
+    
+}
+.col h3{
+    color: white;
+}
+.col-50 li {
+    padding: 14px 16px;
+    display: block;
+    font-size: 40px;
+}
+.col-50:hover {
+    opacity: 0.7;
+}
+.footer
+{
+    margin-left: 15%;
+    background-color: black;
+    overflow: hidden;
+    text-align: center;
+}
+button[type=submit] {
+    width: 80%;
+    background-color: green;
+    color: black;
+}
+input[type=text] {
+    width: 80%;
+    padding: 20px;
+
+    margin: 4px 20px 4px 20px;
+    
+}
+.footer i{color: white;padding: 14px 16px;cursor: pointer;}
+.footer p{color: white;}
